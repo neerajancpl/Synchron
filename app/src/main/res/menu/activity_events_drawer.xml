@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myProfile"
+            android:icon="@drawable/menu_profile_inactive_icon"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_advisors"
+            android:icon="@drawable/menu_advisors_inactive_icon"
+            android:title="Advisors" />
+        <item
+            android:id="@+id/nav_activityFeed"
+            android:icon="@drawable/menu_afeed_inactive_icon"
+            android:title="Activity Feed" />
+
+        <item
+            android:id="@+id/nav_businessPartners"
+            android:icon="@drawable/menu_bpartners_inactive_icon"
+            android:title="Business Partners" />
+        <item
+            android:id="@+id/nav_teamMembers"
+            android:icon="@drawable/menu_mt_inactive_icon"
+            android:title="Team Members" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/menu_events_inactive_icon"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_markAttendence"
+            android:icon="@drawable/menu_mattend_inactive_icon"
+            android:title="Mark Attendence" />
+        <item
+            android:id="@+id/nav_logOut"
+            android:icon="@drawable/menu_signout_inactive_icon"
+            android:title="Log Out" />
+
+
+                <item
+                    android:id="@+id/nav_web"
+                    android:title="Web"
+                    android:icon="@drawable/menu_web_icon"/>
+                <item
+                    android:id="@+id/nav_location"
+                    android:title="Location"
+                    android:icon="@drawable/menu_locationicon"/>
+                <item
+                    android:id="@+id/nav_call"
+                    android:title="Call"
+                    android:icon="@drawable/menu_call_icon"/>
+
+
+    </group>
+
+
+</menu>

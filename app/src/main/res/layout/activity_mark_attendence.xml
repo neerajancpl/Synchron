@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MarkAttendence"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/qrcode_navbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Mark Attendence"
+            android:textColor="#FFF"
+            android:id="@+id/text_title"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/btn_back"
+            android:background="@drawable/eventdetails_navbar_backbtn"
+            android:layout_alignTop="@+id/text_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/btn_home"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/speakers_feedback_navbar_homebtn"
+            android:layout_alignTop="@+id/text_title"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/qrcode_topimage"
+        android:id="@+id/image_top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/qrcode_subtilte"
+        android:id="@+id/image_middle" />
+
+    <ImageView
+        android:layout_width="239dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/img_code"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.78" />
+
+</LinearLayout>

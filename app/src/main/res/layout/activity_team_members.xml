@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.synchron.ncpl.synchron.TeamMembers">
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/profileedit_navbar">
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Team Members"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/speakers_feedback_navbar_backbtn"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/speakers_feedback_navbar_homebtn"
+            />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frame"
+        android:background="@drawable/teammembers_tab_bottomline"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rel_header">
+
+    </ImageView>
+
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:id="@+id/gridView"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_below="@+id/rel_header" />
+</LinearLayout>

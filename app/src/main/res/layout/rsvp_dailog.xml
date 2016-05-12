@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/speakers_feedback_navbar">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RSVP"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Will you Attend"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:checkedButton="1"
+        >
+    <RadioButton
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView3"
+    android:layout_alignStart="@+id/textView3"
+    android:layout_below="@+id/textView3"
+    android:layout_marginTop="10dp"
+    android:id="@+id/check_attend"
+    android:text="     Attending" />
+
+        <RadioButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/check_attend"
+            android:layout_alignStart="@+id/check_attend"
+            android:layout_below="@+id/check_attend"
+            android:text="     Tentative"
+            android:id="@+id/check_tentative"/>
+
+
+        <RadioButton
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/check_tentative"
+        android:layout_alignStart="@+id/check_tentative"
+        android:layout_below="@+id/check_tentative"
+        android:text="      Not Attending"
+        android:id="@+id/check_notAttending"/>
+
+
+
+
+    </RadioGroup>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/btn_rsvp_ok"
+        android:layout_width="130dp"
+
+        android:layout_height="wrap_content"
+        android:background="@drawable/rsvp_ok_btn"
+        />
+    <Button
+        android:id="@+id/btn_rsvp_cancel"
+        android:layout_width="140dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rsvp_cancel_btn"
+        />
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.synchron.ncpl.synchron.EventDetails">
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/eventdetails_navbar" />
+
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Event Details"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_fvrt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/eventdetails_navbar_comment_icon" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/navbar_backbtn" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Investors MeetUp"
+        android:id="@+id/text_name"
+        android:textColor="#ff0000"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/rel_header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1417 S 1 St Street"
+        android:id="@+id/txt_street"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/text_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Melborn"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/txt_city"
+        android:layout_below="@+id/txt_street"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Australia"
+        android:id="@+id/text_country"
+        android:layout_below="@+id/txt_city"
+        android:layout_alignLeft="@+id/txt_city"
+        android:layout_alignStart="@+id/txt_city" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/img_city"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rel_header"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Phone:9874589125"
+        android:id="@+id/txt_phone"
+        android:layout_below="@+id/text_country"
+        android:layout_alignLeft="@+id/text_country"
+        android:layout_alignStart="@+id/text_country" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email:narayanareddy@gmail.com"
+        android:id="@+id/text_email"
+        android:layout_below="@+id/txt_phone"
+        android:layout_alignLeft="@+id/txt_phone"
+        android:layout_alignStart="@+id/txt_phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="* FREE entry for all"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/text_email"
+        android:layout_alignLeft="@+id/text_email"
+        android:layout_alignStart="@+id/text_email" />
+    <LinearLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView7"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_map"
+            android:layout_width="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eventdetails_tab_location_inactive"
+
+            />
+
+        <Button
+            android:id="@+id/btn_agenda"
+            android:layout_width="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eventdetails_tab_agenda_inactive"
+            android:layout_alignParentTop="true"
+
+            />
+
+        <Button
+            android:id="@+id/btn_speaker"
+            android:layout_width="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eventdetails_tab_speaker_inactive"
+/>
+
+        <Button
+            android:id="@+id/btn_attendency"
+            android:layout_width="80dp"
+            android:layout_marginRight="1dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eventdetails_tab_attendance_inactive"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_rsvp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/eventdetails_rsvp_btn" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/eventdetails_submit_btn"
+            android:id="@+id/btn_feedback"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btn_rsvp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myframe"
+        android:layout_below="@+id/rl_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/rl_bottom1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/tabbottomline" />
+    </FrameLayout>
+
+
+</RelativeLayout>
