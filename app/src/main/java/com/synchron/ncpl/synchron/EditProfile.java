@@ -121,6 +121,8 @@ public class EditProfile extends AppCompatActivity
         });
     }
     private void selectImage() {
+Toast.makeText(EditProfile.this," Toast message in selectImage()", Toast.LENGTH_SHORT).show();
+
         final CharSequence[] items = {"Take Photo", "Choose from Library", "Cancel"};
         AlertDialog.Builder builder = new AlertDialog.Builder(EditProfile.this);
         builder.setTitle("Add Photo!");
