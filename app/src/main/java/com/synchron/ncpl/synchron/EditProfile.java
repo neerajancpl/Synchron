@@ -208,9 +208,6 @@ public class EditProfile extends AppCompatActivity
     }
 
  public void loadUrl(String url) {
- Toast.makeText(EditProfile.this,"Edited in Edit profile forchanges in github desktop ", Toast.LENGTH_SHORT).show();
-
-
         // JsonArrayRequest jsonRequest = new JsonArrayRequest();
         StringRequest MyStringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
